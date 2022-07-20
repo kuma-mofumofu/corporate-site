@@ -1,0 +1,17 @@
+@import "../global/variables";
+
+body{
+
+  p{
+    font-size: $fs;
+  }
+  
+  ul{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: $color-black;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../global/variables";
+
+#header{
+  height: 86px;
+  background-color: $color-header-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  nav{
+    text-align: right;
+
+    a{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: relative;
+      display: inline-block;
+  
+      &::after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: $color-white;
+        transition: .3s;
+      }
+  
+      &:hover::after{
+        width: 100%;
+      }
+    }
+  }
+
+  ul{
+    display: flex;
+
+    li{
+      margin-right:20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+  a{
+    color:$color-white;
+  }
+}

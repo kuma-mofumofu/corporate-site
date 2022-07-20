@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* ===============================================
+# フォント
+=============================================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+/* ===============================================
+# フォント
+=============================================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+body p {
+  font-size: 16px;
+}
+
+body ul {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+.open {
+  display: none;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#header {
+  height: 86px;
+  background-color: #21054d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#header nav {
+  text-align: right;
+}
+
+#header nav a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+#header nav a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#header nav a:hover::after {
+  width: 100%;
+}
+
+#header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header ul li {
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#header a {
+  color: #fff;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#top .top-visual {
+  height: 100vh;
+  background-image: url(../../images/top.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*# sourceMappingURL=style.css.map */

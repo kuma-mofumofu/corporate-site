@@ -1,0 +1,12 @@
+@import "../global/variables";
+
+#top{
+
+  .top-visual{
+    height: 100vh;
+    background-image: url(../../images/top.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

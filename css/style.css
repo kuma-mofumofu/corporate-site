@@ -22,6 +22,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 body p {
   font-size: 16px;
 }
@@ -33,6 +34,66 @@ body ul {
 body a {
   text-decoration: none;
   color: #333;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+.scroll {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  height: 70px;
+}
+
+.scroll::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 70px;
+  background: #fff;
+  -webkit-animation: scroll .9s ease-in-out infinite;
+          animation: scroll .9s ease-in-out infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    height: 70px;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 70px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    height: 70px;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 70px;
+  }
+}
+
+.scroll span {
+  position: absolute;
+  top: -40px;
+  right: -25px;
+  color: #fff;
+  font-size: 12px;
+  text-orientation: mixed;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 /* ===============================================
@@ -58,8 +119,8 @@ body a {
 # 色
 =============================================== */
 #header {
+  width: 100%;
   height: 86px;
-  background-color: #21054d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +132,13 @@ body a {
           align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  position: fixed;
+  z-index: 100;
+}
+
+#header.is-active {
+  background-color: #21054d;
+  height: 64px;
 }
 
 #header nav {
@@ -127,9 +195,36 @@ body a {
 =============================================== */
 #top .top-visual {
   height: 100vh;
-  background-image: url(../../images/top.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url(../images/top.png);
   background-position: center center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+#top .top-visual .title {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#top .top-visual .title > p:first-of-type {
+  font-family: "Montserrat";
+  font-size: 72px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#top .top-visual .title > p:nth-of-type(2) {
+  font-size: 25px;
+  padding-bottom: 50px;
+}
+
+#top .top-visual br {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

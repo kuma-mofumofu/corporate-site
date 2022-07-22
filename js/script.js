@@ -28,6 +28,7 @@ $(function () {
   // .menuをクリックした時
 
     $(this).toggleClass('is-open')
+    $('#header').toggleClass('is-open')
     //.is-open追加
 
         //指定するクラスに〇〇があるか調べて、true・farceで返す

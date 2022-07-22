@@ -3,13 +3,9 @@
 #header{
   width: 100%;
   height: 86px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
   position: fixed;
   z-index:100;
+  padding-top: 20px;
 
   &.is-active{
     background-color: $color-header-bg;
@@ -59,4 +55,11 @@
   a{
     color:$color-white;
   }
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }

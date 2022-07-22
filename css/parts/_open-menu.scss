@@ -1,2 +1,39 @@
 @import "../global/variables";
 
+#header{
+
+  &.is-open{
+    height: 100%;
+    background: linear-gradient(135deg,#7633a4,#250d65);
+
+    .logo{
+      display: none;
+    }
+
+    nav{
+      display: block;
+      position: absolute;
+      top:35%;
+
+      ul{
+        flex-direction: column;
+        align-items: center;
+
+        li{
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .header-inner{
+      justify-content: center;
+    }
+
+    .menu{
+      position: absolute;
+      top: 0;
+      right: 30px;
+    }
+  }
+}

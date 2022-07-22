@@ -1,0 +1,46 @@
+@import "../global/variables";
+
+.btn-outer{
+  display: inline-block;
+  color: $color-white;
+
+  &:hover{
+    p{
+      &::after{
+        right: 13%;
+      }
+    }
+  }
+}
+
+.btn{
+  width: 220px;
+  height: 55px;
+  border-radius: 30px;
+  padding-top: 20px;
+  position: relative;
+
+  p{
+
+    &::after{
+      position: absolute;
+      top: 38%;
+      right: 15%;
+    }
+  }
+}
+
+.btn-contact{
+  border: solid 1px $color-white;
+  margin: 0 auto;
+  font-family: "Montserrat";
+
+  p{
+    font-size: 13px;
+    font-weight: bold;
+
+    &::after{
+      content: '▶';
+    }
+  }
+}

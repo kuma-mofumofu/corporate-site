@@ -1,7 +1,9 @@
 $(function () {
 
-
-  //スクロールした時にイベント
+  /* ===============================================
+  # スクロールした時の、headerイベント
+  =============================================== */
+  
   $(window).scroll(function(){
 
     if($(window).scrollTop()>20){
@@ -18,23 +20,18 @@ $(function () {
   });
 
 
+  /* ===============================================
+  # ハンバーガーメニュー
+  =============================================== */
 
+  $('.menu').on('click',function () {
+  // .menuをクリックした時
 
-
-
-
-
-
-
-
-
-
-  // クリックでclass追加
-  $('.openbtn').on('click',function () {
-    $(this).toggleClass('active')
+    $(this).toggleClass('is-open')
+    //.is-open追加
 
         //指定するクラスに〇〇があるか調べて、true・farceで返す
-        if ($(this).hasClass('is_active') == true) {
+        if ($(this).hasClass('is-open') == true) {
           console.log('aaa') //ある時（true）の処理
         } else {
           console.log('bbb') //ない時(farce)の処理

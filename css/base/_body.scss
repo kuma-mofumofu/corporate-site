@@ -1,9 +1,24 @@
 @import "../global/variables";
 
+*{
+  //ドラッグした時の処理
+  ::selection{
+    background: $color-header-bg;
+    color: $color-white;
+  }
+
+  //ドラッグした時の処理(Firefox用)
+  ::-moz-selection{
+    background: $color-header-bg;
+    color: $color-white;
+  }
+}
+
 body{
 
   p{
     font-size: $fs;
+    font-family: "ヒラギノ角ゴシック";
   }
   
   ul{
@@ -14,4 +29,5 @@ body{
     text-decoration: none;
     color: $color-black;
   }
+
 }

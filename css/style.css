@@ -26,8 +26,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+* ::-moz-selection {
+  background: #21054d;
+  color: #fff;
+}
+* ::selection {
+  background: #21054d;
+  color: #fff;
+}
+
+* ::-moz-selection {
+  background: #21054d;
+  color: #fff;
+}
+
 body p {
   font-size: 16px;
+  font-family: "ヒラギノ角ゴシック";
 }
 
 body ul {
@@ -66,6 +82,12 @@ body a {
   bottom: 0;
   right: 50px;
   height: 70px;
+}
+
+@media screen and (max-width: 770px) {
+  .scroll {
+    right: 30px;
+  }
 }
 
 .scroll::after {
@@ -125,7 +147,7 @@ body a {
   display: none;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 770px) {
   .menu {
     display: block;
   }
@@ -216,7 +238,7 @@ body a {
   margin-bottom: 5px;
 }
 
-#header.is-open .header-inner {
+#header.is-open .header--inner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -237,12 +259,12 @@ body a {
 /* ===============================================
 # 色
 =============================================== */
-.btn-outer {
+.btn--outer {
   display: inline-block;
   color: #fff;
 }
 
-.btn-outer:hover p::after {
+.btn--outer:hover p::after {
   right: 13%;
 }
 
@@ -252,12 +274,19 @@ body a {
   border-radius: 30px;
   padding-top: 20px;
   position: relative;
+  text-align: center;
+}
+
+.btn p {
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .btn p::after {
   position: absolute;
   top: 38%;
   right: 15%;
+  content: '▶';
 }
 
 .btn-contact {
@@ -266,13 +295,20 @@ body a {
   font-family: "Montserrat";
 }
 
-.btn-contact p {
-  font-size: 13px;
-  font-weight: bold;
+.btn-contact:hover {
+  color: #CCCCCC;
 }
 
-.btn-contact p::after {
-  content: '▶';
+.btn-more {
+  background: -webkit-gradient(linear, left top, right top, from(#7633A4), to(#21054d));
+  background: linear-gradient(left, #7633A4, #21054d);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btn-more:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#7633A4), to(#21054d));
+  background: linear-gradient(right, #7633A4, #21054d);
 }
 
 /* ===============================================
@@ -290,11 +326,27 @@ body a {
   position: fixed;
   z-index: 100;
   padding-top: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #header.is-active {
   background-color: #21054d;
   height: 64px;
+}
+
+@media screen and (max-width: 770px) {
+  #header .logo {
+    width: 120px;
+  }
+}
+
+#header .logo a {
+  display: inline-block;
+}
+
+#header .logo a img {
+  width: 100%;
 }
 
 #header nav {
@@ -346,7 +398,7 @@ body a {
   color: #fff;
 }
 
-.header-inner {
+.header--inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +421,35 @@ body a {
 /* ===============================================
 # 色
 =============================================== */
-#top .top-visual {
+.title {
+  font-family: "Montserrat";
+  font-size: 36px;
+  color: #391E88;
+}
+
+.title h2 {
+  padding-bottom: 5px;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#top {
+  /* ===============================================
+  # NEWS
+  =============================================== */
+  /* ===============================================
+  # SERVICE
+  =============================================== */
+}
+
+#top .kv {
   height: 100vh;
   background-image: url(../images/top.png);
   background-position: center center;
@@ -379,7 +459,7 @@ body a {
   color: #fff;
 }
 
-#top .top-visual .title {
+#top .kv .kv--title {
   width: 100%;
   position: absolute;
   top: 40%;
@@ -388,19 +468,211 @@ body a {
           transform: translate(-50%, -50%);
 }
 
-#top .top-visual .title > p:first-of-type {
+@media screen and (max-width: 770px) {
+  #top .kv .kv--title {
+    width: 88%;
+    text-align: left;
+  }
+}
+
+#top .kv .kv--title > p:first-of-type {
   font-family: "Montserrat";
   font-size: 72px;
   font-weight: bold;
   padding-bottom: 30px;
 }
 
-#top .top-visual .title > p:nth-of-type(2) {
+@media screen and (max-width: 770px) {
+  #top .kv .kv--title > p:first-of-type {
+    font-size: 40px;
+  }
+}
+
+#top .kv .kv--title > p:nth-of-type(2) {
   font-size: 25px;
   padding-bottom: 50px;
 }
 
-#top .top-visual br {
+@media screen and (max-width: 770px) {
+  #top .kv .kv--title > p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
+}
+
+#top .kv .kv--title > p:nth-of-type(2) br {
   display: none;
+}
+
+@media screen and (max-width: 770px) {
+  #top .kv .kv--title > p:nth-of-type(2) br {
+    display: block;
+  }
+}
+
+#top .kv br {
+  display: none;
+}
+
+#top .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  margin: 0 auto;
+  max-width: 917px;
+  font-family: "Montserrat";
+}
+
+@media screen and (max-width: 770px) {
+  #top .news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 40px;
+  }
+}
+
+#top .title-news {
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  #top .title-news {
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+}
+
+#top .news-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 770px) {
+  #top .news-list li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 30px;
+  }
+}
+
+#top .news-list li time {
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+#top .news-list li .news-list-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 770px) {
+  #top .news-list li .news-list-block {
+    margin-bottom: 5px;
+  }
+}
+
+#top .news-list li .news-list-block > div {
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  width: 82px;
+  height: 22px;
+  background: #E8E8E8;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  #top .news-list li .news-list-block > div {
+    font-size: 11px;
+  }
+}
+
+#top .news-list li a {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  #top .news-list li a {
+    padding: 0;
+  }
+}
+
+#top .news-list li a p {
+  letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 770px) {
+  #top .news-list li a p {
+    font-size: 14px;
+  }
+}
+
+#top .service {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+#top .title-service {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#top .service--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#top .service--list--block {
+  margin-right: 30px;
+  text-align: center;
+}
+
+#top .service--list--block img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#top .service--list--block p {
+  font-family: "Montserrat";
+}
+
+#top .service--list--block p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+#top .service--list--block p:nth-of-type(2) {
+  font-size: 15px;
+  text-align: left;
+  text-align: justify;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=style.css.map */

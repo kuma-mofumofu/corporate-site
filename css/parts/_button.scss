@@ -1,6 +1,6 @@
 @import "../global/variables";
 
-.btn-outer{
+.btn--outer{
   display: inline-block;
   color: $color-white;
 
@@ -19,13 +19,17 @@
   border-radius: 30px;
   padding-top: 20px;
   position: relative;
+  text-align: center;
 
   p{
+    font-size: 13px;
+    font-weight: bold;
 
     &::after{
       position: absolute;
       top: 38%;
       right: 15%;
+      content: '▶';
     }
   }
 }
@@ -35,12 +39,19 @@
   margin: 0 auto;
   font-family: "Montserrat";
 
-  p{
-    font-size: 13px;
-    font-weight: bold;
+  &:hover{
+    color: #CCCCCC;
+  }
+}
 
-    &::after{
-      content: '▶';
-    }
+.btn-more{
+  
+  background:linear-gradient(left,$color-btn,$color-header-bg);
+  transition: 1s;
+
+  // animation: ;
+
+  &:hover{
+    background:linear-gradient(right,$color-btn,$color-header-bg);
   }
 }

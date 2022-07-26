@@ -6,6 +6,10 @@
   right: 50px;
   height: 70px;
 
+  @media screen and (max-width:770px){
+    right: 30px;
+  }
+
   &::after{
     content: '';
     position: absolute;

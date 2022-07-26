@@ -1,0 +1,11 @@
+@import "../global/variables";
+
+.title{
+  font-family: "Montserrat";
+  font-size:$fs-title;
+  color:$color-main;
+
+  h2{
+    padding-bottom: 5px;
+  }
+}

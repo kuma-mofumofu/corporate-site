@@ -6,10 +6,24 @@
   position: fixed;
   z-index:100;
   padding-top: 20px;
+  transition: all 0.3s;
 
   &.is-active{
     background-color: $color-header-bg;
     height: 64px;
+  }
+
+  .logo{
+    @media screen and (max-width:770px){
+      width: 120px;
+    }
+
+    a{
+      display: inline-block;
+      img{
+        width: 100%;
+      }
+    }
   }
 
   nav{
@@ -56,7 +70,7 @@
     color:$color-white;
   }
 }
-.header-inner{
+.header--inner{
   display: flex;
   justify-content: space-between;
   align-items: center;

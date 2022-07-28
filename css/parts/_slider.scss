@@ -1,0 +1,108 @@
+@import "../global/variables";
+
+/* ===============================================
+# 自分で考えて作る
+=============================================== */
+
+// .slider{
+//   width: 90%;
+//   position: absolute;
+//   top: 50%;
+//   transform: translate(-50%,-50%);
+// }
+// .slider--image{
+
+//   div{
+//     &:nth-of-type(1){
+
+//     }
+//     &:nth-of-type(2){
+//       display: none;
+//     }
+//     &:nth-of-type(3){
+//       display: none;
+//     }
+
+//     img{
+//       width: 100%;
+//     }
+//   }
+// }
+
+/* ===============================================
+# 調べて作る
+=============================================== */
+
+.slider{
+  width: 60%;
+  margin-right: 30px;
+  position: relative;
+}
+
+.slider--image{
+
+  div{
+    &:nth-of-type(1){
+      display: block;
+    }
+    &:nth-of-type(2){
+      display: none;//仮消し
+    }
+    &:nth-of-type(3){
+      display: none;//仮消し
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.slider--btn{
+
+  > div{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+  }
+
+  span{
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-top:solid 6px $color-main;
+    border-right:solid 6px $color-main;
+  }
+
+  .slider--btn-left{
+    left: 5%;
+
+    span{
+      transform:rotate(-135deg);
+    }
+  }
+  .slider--btn-right{
+    right: 5%;
+
+    span{
+      transform:rotate(45deg);
+    }
+  }
+}
+
+.slider--dot{
+  text-align: right;
+
+  span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #c0c0c0;
+    margin-right: 3px;
+
+    &.is-active{
+      background: $color-main;
+    }
+  }
+}

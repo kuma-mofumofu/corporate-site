@@ -27,6 +27,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 * ::-moz-selection {
   background: #21054d;
   color: #fff;
@@ -65,7 +66,7 @@ body a {
 # 色
 =============================================== */
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 /* ===============================================
@@ -268,6 +269,7 @@ body a {
   border-radius: 30px;
   display: inline-block;
   position: relative;
+  z-index: 5;
 }
 
 .btn:hover span::after {
@@ -487,6 +489,92 @@ body a {
 /* ===============================================
 # 色
 =============================================== */
+/* ===============================================
+# 自分で考えて作る
+=============================================== */
+/* ===============================================
+# 調べて作る
+=============================================== */
+.slider {
+  width: 60%;
+  margin-right: 30px;
+  position: relative;
+}
+
+.slider--image div:nth-of-type(1) {
+  display: block;
+}
+
+.slider--image div:nth-of-type(2) {
+  display: none;
+}
+
+.slider--image div:nth-of-type(3) {
+  display: none;
+}
+
+.slider--image div img {
+  width: 100%;
+}
+
+.slider--btn > div {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+
+.slider--btn span {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-top: solid 6px #391E88;
+  border-right: solid 6px #391E88;
+}
+
+.slider--btn .slider--btn-left {
+  left: 5%;
+}
+
+.slider--btn .slider--btn-left span {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.slider--btn .slider--btn-right {
+  right: 5%;
+}
+
+.slider--btn .slider--btn-right span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.slider--dot {
+  text-align: right;
+}
+
+.slider--dot span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #c0c0c0;
+  margin-right: 3px;
+}
+
+.slider--dot span.is-active {
+  background: #391E88;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
 #top {
   /* ===============================================
   # NEWS
@@ -694,9 +782,24 @@ body a {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 770px) {
+  #top .service--list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #top .service--list--block {
   margin-right: 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+  #top .service--list--block {
+    margin-right: 0;
+  }
 }
 
 #top .service--list--block img {
@@ -721,8 +824,49 @@ body a {
   line-height: 1.8;
 }
 
+@media screen and (max-width: 770px) {
+  #top .service--list--block p:nth-of-type(2) {
+    padding-bottom: 40px;
+  }
+}
+
 #top .works {
-  max-width: 1200px;
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 60px 20px;
   margin: 0 auto;
+}
+
+#top .works::after {
+  content: "";
+  width: 60%;
+  height: 100%;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+}
+
+#top .works--text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+#top .works--text > p {
+  font-family: "Montserrat";
+  font-size: 15px;
+  line-height: 1.8rem;
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -165,11 +165,18 @@
   .service--list{
     display: flex;
     margin-bottom: 30px;
+
+    @media screen and (max-width:770px){
+      flex-direction: column;
+    }
   }
 
   .service--list--block{
     margin-right: 30px;
     text-align: center;
+    @media screen and (max-width:770px){
+      margin-right: 0;
+    }
 
     img{
       width: 100%;
@@ -189,6 +196,10 @@
         text-align: left;
         text-align: justify;
         line-height: 1.8;
+
+        @media screen and (max-width:770px){
+          padding-bottom: 40px;
+        }
       }
     }
   }
@@ -198,8 +209,38 @@
   =============================================== */
 
   .works{
-    max-width: 1200px;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 60px 20px;
     margin: 0 auto;
+
+    &::after{
+      content: "";
+      width: 60%;
+      height: 100%;
+      background-color: $color-gray_bg;
+      position: absolute;
+      top:50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
   }
+
+  .works--text{
+    flex-grow: 1;
+    text-align: center;
+
+    > p{
+      font-family: "Montserrat";
+      font-size: 15px;
+      line-height: 1.8rem;
+      padding-bottom: 30px;
+    }
+  }
+
+
 
 }

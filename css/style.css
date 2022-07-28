@@ -259,56 +259,98 @@ body a {
 /* ===============================================
 # 色
 =============================================== */
-.btn--outer {
-  display: inline-block;
-  color: #fff;
-}
-
-.btn--outer:hover p::after {
-  right: 13%;
-}
-
+/* ===============================================
+# ボタン共通
+=============================================== */
 .btn {
   width: 220px;
   height: 55px;
   border-radius: 30px;
-  padding-top: 20px;
+  display: inline-block;
   position: relative;
-  text-align: center;
 }
 
-.btn p {
-  font-size: 13px;
+.btn:hover span::after {
+  right: -45px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn span {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 15px;
   font-weight: bold;
-}
-
-.btn p::after {
   position: absolute;
-  top: 38%;
-  right: 15%;
-  content: '▶';
+  top: 20px;
+  left: 65px;
 }
 
+.btn span::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  content: "▶";
+  position: absolute;
+  top: 1px;
+  right: -40px;
+}
+
+/* ===============================================
+# contact ボタン
+=============================================== */
 .btn-contact {
   border: solid 1px #fff;
-  margin: 0 auto;
-  font-family: "Montserrat";
 }
 
-.btn-contact:hover {
+.btn-contact:hover span {
   color: #CCCCCC;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.btn-more {
+/* ===============================================
+# MORE ボタン
+=============================================== */
+.btn-morer::before, .btn-morer::after {
+  content: "";
+  display: inline-block;
+  width: 220px;
+  height: 55px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.btn-morer::before {
   background: -webkit-gradient(linear, left top, right top, from(#7633A4), to(#21054d));
-  background: linear-gradient(left, #7633A4, #21054d);
-  -webkit-transition: 1s;
-  transition: 1s;
+  background: linear-gradient(to right, #7633A4, #21054d 100%);
+  z-index: -1;
 }
 
-.btn-more:hover {
+.btn-morer::after {
   background: -webkit-gradient(linear, right top, left top, from(#7633A4), to(#21054d));
-  background: linear-gradient(right, #7633A4, #21054d);
+  background: linear-gradient(to left, #7633A4, #21054d 100%);
+  z-index: -2;
+}
+
+.btn-morer:hover::before {
+  opacity: 0;
+}
+
+.btn-morer:hover span::after {
+  right: -55px;
+}
+
+.btn-morer span {
+  left: 80px;
+}
+
+.btn-morer span::after {
+  right: -50px;
 }
 
 /* ===============================================
@@ -431,6 +473,11 @@ body a {
   padding-bottom: 5px;
 }
 
+.title-service, .title-works {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /* ===============================================
 # フォント
 =============================================== */
@@ -446,6 +493,9 @@ body a {
   =============================================== */
   /* ===============================================
   # SERVICE
+  =============================================== */
+  /* ===============================================
+  # WORKS
   =============================================== */
 }
 
@@ -637,11 +687,6 @@ body a {
   padding-bottom: 140px;
 }
 
-#top .title-service {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 #top .service--list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,5 +719,10 @@ body a {
   text-align: left;
   text-align: justify;
   line-height: 1.8;
+}
+
+#top .works {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

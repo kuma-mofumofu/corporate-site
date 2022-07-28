@@ -1,57 +1,107 @@
 @import "../global/variables";
 
-.btn--outer{
-  display: inline-block;
-  color: $color-white;
-
-  &:hover{
-    p{
-      &::after{
-        right: 13%;
-      }
-    }
-  }
-}
-
+/* ===============================================
+# ボタン共通
+=============================================== */
 .btn{
   width: 220px;
   height: 55px;
   border-radius: 30px;
-  padding-top: 20px;
+  display: inline-block;
   position: relative;
-  text-align: center;
 
-  p{
-    font-size: 13px;
+  &:hover{
+
+    span{
+      &::after{
+        right: -45px;
+        transition: .5s;
+      }
+    }
+  }
+
+  span{
+    color: $color-white;
+    font-family: "Montserrat";
+    font-size: 15px;
     font-weight: bold;
+    position: absolute;
+    top:20px;
+    left: 65px;
 
     &::after{
+      font-family: "Font Awesome 5 Free";
+      font-size: 12px;
+      content: "▶";
       position: absolute;
-      top: 38%;
-      right: 15%;
-      content: '▶';
+      top: 1px;
+      right: -40px;
     }
   }
 }
 
+/* ===============================================
+# contact ボタン
+=============================================== */
+
 .btn-contact{
   border: solid 1px $color-white;
-  margin: 0 auto;
-  font-family: "Montserrat";
 
   &:hover{
-    color: #CCCCCC;
+    span{
+      color: #CCCCCC;
+      transition: .5s;
+    }
   }
 }
 
-.btn-more{
-  
-  background:linear-gradient(left,$color-btn,$color-header-bg);
-  transition: 1s;
+/* ===============================================
+# MORE ボタン
+=============================================== */
 
-  // animation: ;
+.btn-morer{
+
+  &::before,&::after{
+    content: "";
+    display: inline-block;
+    width: 220px;
+    height: 55px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: .5s ease;
+  }
+
+  &::before{
+    background:linear-gradient(to right,$color-btn,$color-header-bg 100%);
+    z-index: -1;
+  }
+
+  &::after{
+    background:linear-gradient(to left,$color-btn,$color-header-bg 100%);
+    z-index: -2;
+  }
 
   &:hover{
-    background:linear-gradient(right,$color-btn,$color-header-bg);
+
+    &::before{
+      opacity: 0;
+    }
+
+    span{
+      &::after{
+        right:-55px;
+      }
+    }
+  }
+
+  span{
+    left: 80px;
+
+    &::after{
+      right:-50px;
+    }
   }
 }

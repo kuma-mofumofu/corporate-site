@@ -41,5 +41,17 @@ $(function () {
   })
 
 
-
 })
+
+
+/* ===============================================
+# JavaScriptで書く練習
+=============================================== */
+
+document.addEventListener('DOMContentLoaded', () => {//先に読み込むため必要
+
+  const startTime = Date.now()*1000;//現在の時間を取得(Date.now()で、1/1000秒を取得するので1000倍にして小数点以下切り捨て)
+
+  const time = (Date.now()*1000) - startTime;// 経過時間を秒で取得
+
+});

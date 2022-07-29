@@ -2,15 +2,25 @@
 
 .title{
   font-family: "Montserrat";
-  font-size:$fs-title;
+  font-size:36px;
   color:$color-main;
 
   h2{
     padding-bottom: 5px;
+
+    @media screen and (max-width:770px){
+      font-size: 30px;
+    }
+  }
+
+  p{
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: bold;
   }
 }
 
-.title-service,.title-works{
+.title-service,.title-works,.title-company{
   text-align: center;
   margin-bottom: 30px;
 }

@@ -37,6 +37,12 @@
   width: 60%;
   margin-right: 30px;
   position: relative;
+
+  @media screen and (max-width:770px){
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
 }
 
 .slider--image{

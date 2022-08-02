@@ -30,6 +30,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 * ::-moz-selection {
   background: #21054d;
   color: #fff;
@@ -690,6 +692,57 @@ footer ul a:hover {
 /* ===============================================
 # 色
 =============================================== */
+.page_title {
+  height: 240px;
+  background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/top.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 50px 40px 10px 40px;
+}
+
+.page_title h2 {
+  font-size: 36px;
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+
+.page_title p {
+  font-size: 13px;
+}
+
+.pankuzu {
+  background-color: #f0f0f0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.pankuzu p {
+  font-family: "Montserrat";
+  font-size: 12px;
+  max-width: 1100px;
+  padding: 5px 15px;
+  margin: 0 auto;
+}
+
+.pankuzu p span {
+  padding: 0 15px;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
 #top {
   /* ===============================================
   # NEWS
@@ -1135,5 +1188,31 @@ footer ul a:hover {
 #top .contact > p {
   font-family: "Montserrat";
   padding-bottom: 20px;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#news .news--list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#news .news--list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#news .news-list-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

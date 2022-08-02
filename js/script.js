@@ -70,7 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {//先に読み込むため�
 
   // const countUp = () => {
   //   count++;                                          //現在のcountの値に1を足す
+  //   console.log(count);
+  //   return count;
   // }
+
+  // console.log(count);
+
 
   // setInterval(countUp,1000);                          //変数countUpの処理を1000ミリ秒後（＝1秒後）に繰り返し
 
@@ -80,6 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {//先に読み込むため�
 
   /*-----------------------------------------------------------------------------*/
 
+  let count = 0;//初期値として0を代入
+
+  const countUp = () => {
+
+    count++;
+
+    let sliderTime = document.querySelector('#slider');
+
+    if(count % 2 === 0){
+      sliderTime.classList.toggle('is-active');
+    }
+  }
+
+  setInterval(countUp,2000);
 
 
 });

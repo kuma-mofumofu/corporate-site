@@ -1,0 +1,20 @@
+@import "../global/variables";
+
+#news{
+  
+  .news--list{
+    max-width: 800px;
+    margin: 0 auto;
+
+    li{
+      display: flex;
+    }
+  }
+
+  .news-list-block{
+    display: flex;
+  }
+
+}
+
+

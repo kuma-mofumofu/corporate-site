@@ -732,6 +732,14 @@ footer ul a:hover {
   margin: 0 auto;
 }
 
+.pankuzu p a {
+  color: #21054d;
+}
+
+.pankuzu p a:hover {
+  border-bottom: solid 1px #21054d;
+}
+
 .pankuzu p span {
   padding: 0 15px;
 }
@@ -1204,7 +1212,7 @@ footer ul a:hover {
 #news .news--list {
   max-width: 800px;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 70px 15px;
 }
 
 #news .news--list li {
@@ -1232,20 +1240,17 @@ footer ul a:hover {
 
 #news .news--list li a {
   padding-left: 20px;
+  letter-spacing: .1rem;
+  line-height: 1.2rem;
+}
+
+#news .news--list li a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 770px) {
   #news .news--list li a {
     padding: 0;
-  }
-}
-
-#news .news--list li a p {
-  letter-spacing: .1rem;
-}
-
-@media screen and (max-width: 770px) {
-  #news .news--list li a p {
     font-size: 14px;
   }
 }

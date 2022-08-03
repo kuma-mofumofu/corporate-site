@@ -85,20 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {//先に読み込むため�
 
   /*-----------------------------------------------------------------------------*/
 
-  let count = 0;//初期値として0を代入
+  let count = 0;                                         //初期値として0を代入
 
-  const countUp = () => {
+  const countUp = () => {                                //ここの変数名は「セット名」で、ループで増えたcountの値が入ってるわけではない
 
-    count++;
+    count++;                                             //現在のcountの値に1を足す
 
-    let sliderTime = document.querySelector('#slider');
+    let sliderTime = document.querySelector('#slider');  //「querySelector」の引数に指定したclass・idを変数に入れる
 
     if(count % 2 === 0){
       sliderTime.classList.toggle('is-active');
     }
   }
 
-  setInterval(countUp,2000);
+  setInterval(countUp,2000);                             //変数countUpの処理を1000ミリ秒後（＝2秒後）に繰り返し
 
 
 });

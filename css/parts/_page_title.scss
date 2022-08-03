@@ -11,7 +11,6 @@
   text-align: center;
   padding: 50px 40px 10px 40px;
 
-
   h2{
     font-size: 36px;
     padding-top: 50px;
@@ -28,6 +27,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   position: sticky;
+  top:64px;
+  z-index: 50;
 
   p{
     font-family: "Montserrat";

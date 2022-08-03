@@ -720,6 +720,8 @@ footer ul a:hover {
   padding-bottom: 10px;
   position: -webkit-sticky;
   position: sticky;
+  top: 64px;
+  z-index: 50;
 }
 
 .pankuzu p {
@@ -1202,17 +1204,87 @@ footer ul a:hover {
 #news .news--list {
   max-width: 800px;
   margin: 0 auto;
+  padding: 70px 0;
 }
 
 #news .news--list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 770px) {
+  #news .news--list li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 30px;
+  }
+}
+
+#news .news--list li a {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  #news .news--list li a {
+    padding: 0;
+  }
+}
+
+#news .news--list li a p {
+  letter-spacing: .1rem;
+}
+
+@media screen and (max-width: 770px) {
+  #news .news--list li a p {
+    font-size: 14px;
+  }
+}
+
+#news .news--list time {
+  font-size: 14px;
+  padding-right: 20px;
 }
 
 #news .news-list-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 770px) {
+  #news .news-list-block {
+    margin-bottom: 5px;
+  }
+}
+
+#news .news-list-block > div {
+  background-color: #E8E8E8;
+  width: 82px;
+  height: 22px;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 770px) {
+  #news .news-list-block > div {
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

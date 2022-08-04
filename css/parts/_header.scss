@@ -8,6 +8,10 @@
   padding-top: 20px;
   transition: all 0.3s;
 
+  @media screen and (max-width:770px){
+    padding-top: 10px;
+  }
+
   &.is-active{
     background-color: $color-header-bg;
     height: 64px;

@@ -32,6 +32,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 * ::-moz-selection {
   background: #21054d;
   color: #fff;
@@ -376,6 +378,12 @@ body a {
   padding-top: 20px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media screen and (max-width: 770px) {
+  #header {
+    padding-top: 10px;
+  }
 }
 
 #header.is-active {
@@ -753,6 +761,43 @@ footer ul a:hover {
 /* ===============================================
 # 色
 =============================================== */
+.contact {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 80px 0;
+}
+
+.contact > p {
+  font-family: "Montserrat";
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .contact > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+.contact > p br {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .contact > p br {
+    display: block;
+  }
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
 #top {
   /* ===============================================
   # NEWS
@@ -768,9 +813,6 @@ footer ul a:hover {
   =============================================== */
   /* ===============================================
   # RECRUIT
-  =============================================== */
-  /* ===============================================
-  # CONTACT
   =============================================== */
 }
 
@@ -1189,17 +1231,6 @@ footer ul a:hover {
   }
 }
 
-#top .contact {
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 80px 0;
-}
-
-#top .contact > p {
-  font-family: "Montserrat";
-  padding-bottom: 20px;
-}
-
 /* ===============================================
 # フォント
 =============================================== */
@@ -1291,5 +1322,85 @@ footer ul a:hover {
   #news .news-list-block > div {
     font-size: 11px;
   }
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#service .business {
+  max-width: 1140px;
+  padding: 70px 15px;
+  margin: 0 auto;
+}
+
+#service .business .business--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 770px) {
+  #service .business .business--block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#service .business .business--block-image {
+  width: 40%;
+}
+
+@media screen and (max-width: 770px) {
+  #service .business .business--block-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+#service .business .business--block-image img {
+  width: 100%;
+}
+
+#service .business .business--block-text {
+  width: 60%;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 770px) {
+  #service .business .business--block-text {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+#service .business .business--block-text p {
+  font-family: "Montserrat";
+}
+
+#service .business .business--block-text p:nth-of-type(1) {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  #service .business .business--block-text p:nth-of-type(1) {
+    text-align: center;
+  }
+}
+
+#service .business .business--block-text p:nth-of-type(2) {
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 }
 /*# sourceMappingURL=style.css.map */

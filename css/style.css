@@ -34,6 +34,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 * ::-moz-selection {
   background: #21054d;
   color: #fff;
@@ -1402,5 +1403,64 @@ footer ul a:hover {
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: 0.05em;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#works .achievement {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 15px;
+}
+
+@media screen and (max-width: 770px) {
+  #works .achievement {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#works .achievement .achievement--block {
+  max-width: 360px;
+  width: 30%;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 770px) {
+  #works .achievement .achievement--block {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: 0;
+  }
+}
+
+#works .achievement .achievement--block img {
+  width: 100%;
+  margin-bottom: 15px;
+  border: solid 1px #ececec;
+}
+
+#works .achievement .achievement--block a {
+  display: block;
+}
+
+#works .achievement .achievement--block a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

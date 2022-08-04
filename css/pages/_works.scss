@@ -1,0 +1,49 @@
+@import "../global/variables";
+
+#works{
+
+
+  .achievement{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 15px;
+
+    @media screen and (max-width:770px){
+      flex-direction: column;
+    }
+
+    .achievement--block{
+      max-width: 360px;
+      width: 30%;
+      text-align: center;
+      margin-right: 20px;
+      margin-bottom: 30px;
+
+      @media screen and (max-width:770px){
+        width: 100%;
+        max-width: 1200px;
+        margin-right: 0;
+      }
+
+      img{
+        width: 100%;
+        margin-bottom: 15px;
+        border: solid 1px #ececec;
+
+        @media screen and (max-width:770px){
+          
+        }
+      }
+
+      a{
+        display: block;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

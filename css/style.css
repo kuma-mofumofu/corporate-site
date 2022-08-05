@@ -35,6 +35,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 * ::-moz-selection {
   background: #21054d;
   color: #fff;
@@ -1462,5 +1463,181 @@ footer ul a:hover {
 
 #works .achievement .achievement--block a:hover {
   text-decoration: underline;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#company {
+  /* ===============================================
+  # メッセージ
+  =============================================== */
+  /* ===============================================
+  # 会社概要
+  =============================================== */
+  /* ===============================================
+  # Google map
+  =============================================== */
+}
+
+#company .company {
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: 1300px;
+  text-align: center;
+  background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-circle.png), url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-face.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 770px) {
+  #company .company {
+    padding: 60px 0;
+    background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/sp_bg-circle.png);
+    background-position: center center;
+    background-size: 375px;
+  }
+}
+
+#company .company > p {
+  font-family: "Montserrat";
+}
+
+#company .company > p:nth-of-type(1) {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 770px) {
+  #company .company > p:nth-of-type(1) {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
+
+#company .company > p:nth-of-type(1) span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #f5f534));
+  background: linear-gradient(transparent 70%, #f5f534 0%);
+}
+
+#company .company > p:nth-of-type(1) br {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  #company .company > p:nth-of-type(1) br {
+    display: block;
+  }
+}
+
+#company .company > p:nth-of-type(2) {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+#company .company > p:nth-of-type(2) .br_sp {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  #company .company > p:nth-of-type(2) .br_sp {
+    display: block;
+  }
+}
+
+#company .ceo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px 140px 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 770px) {
+  #company .ceo .ceo--image {
+    width: 100%;
+  }
+}
+
+#company .ceo .ceo--image img {
+  width: 100%;
+}
+
+#company .ceo .ceo--text {
+  padding-left: 50px;
+  font-size: 15px;
+  font-family: "Montserrat";
+}
+
+@media screen and (max-width: 770px) {
+  #company .ceo .ceo--text {
+    padding-left: 0;
+  }
+}
+
+#company .ceo .ceo--text p {
+  line-height: 1.8;
+}
+
+#company .ceo .ceo--text p:nth-of-type(1) {
+  padding-bottom: 20px;
+}
+
+#company .ceo .ceo--text p:nth-of-type(2) {
+  padding-bottom: 20px;
+}
+
+#company .overview {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#company .overview li {
+  font-family: "Montserrat";
+  font-size: 15px;
+  border-bottom: solid 2px #E8E8E8;
+  padding: 30px 10px;
+}
+
+@media screen and (max-width: 770px) {
+  #company .overview li {
+    font-size: 14px;
+    padding: 20px 15px;
+  }
+}
+
+#company .overview li span {
+  font-weight: bold;
+  display: inline-block;
+  width: 20%;
+}
+
+@media screen and (max-width: 770px) {
+  #company .overview li span {
+    display: block;
+    padding-bottom: 15px;
+  }
+}
+
+#company .map {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 110px;
 }
 /*# sourceMappingURL=style.css.map */

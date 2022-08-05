@@ -1,0 +1,150 @@
+@import "../global/variables";
+
+#company{
+
+  /* ===============================================
+  # メッセージ
+  =============================================== */
+
+  .company{
+    padding: 100px 0;
+    margin: 0 auto;
+    max-width: 1300px;
+    text-align: center;
+    background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-circle.png),url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-face.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width:770px){
+      padding: 60px 0;
+      background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/sp_bg-circle.png);
+      background-position: center center;
+      background-size: 375px;
+    }
+
+    > p{
+      font-family: "Montserrat";
+
+      &:nth-of-type(1){
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        display: inline-block;
+
+        @media screen and (max-width:770px){
+          font-size: 32px;
+          line-height: 1.5;
+        }
+
+        span{
+          background: linear-gradient(transparent 70%,#f5f534 0%);//「transparent」は透明(黒の透明)、最後「0%」は境目くっきり
+        }
+
+        br{
+          display: none;
+
+          @media screen and (max-width:770px){
+            display: block;
+          }
+        }
+      }
+
+      &:nth-of-type(2){
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+
+        .br_sp{
+          display: none;
+
+          @media screen and (max-width:770px){
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .ceo{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px 140px 15px;
+    flex-direction: column;
+
+    .ceo--image{
+      @media screen and (max-width:770px){
+        width: 100%;
+      }
+
+      img{
+        width: 100%;
+      }
+    }
+
+    .ceo--text{
+      padding-left: 50px;
+      font-size: 15px;
+      font-family: "Montserrat";
+
+      @media screen and (max-width:770px){
+        padding-left: 0;
+      }
+
+      p{
+        line-height: 1.8;
+        &:nth-of-type(1){
+          padding-bottom: 20px;
+        }
+        &:nth-of-type(2){
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  /* ===============================================
+  # 会社概要
+  =============================================== */
+  .overview{
+
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    li{
+      font-family: "Montserrat";
+      font-size: 15px;
+      border-bottom: solid 2px $color-gray;
+      padding: 30px 10px;
+
+      @media screen and (max-width:770px){
+        font-size: 14px;
+        padding: 20px 15px;
+      }
+
+      span{
+        font-weight: bold;
+        display: inline-block;
+        width: 20%;
+
+        @media screen and (max-width:770px){
+          display: block;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  /* ===============================================
+  # Google map
+  =============================================== */
+
+  .map{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+  }
+
+}

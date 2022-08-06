@@ -36,6 +36,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 * ::-moz-selection {
   background: #21054d;
   color: #fff;
@@ -1639,5 +1640,200 @@ footer ul a:hover {
   max-width: 1140px;
   margin: 0 auto;
   margin-bottom: 110px;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#recruit {
+  /* ===============================================
+  # 募集中の職種
+  =============================================== */
+  /* ===============================================
+  # 社内ムービー
+  =============================================== */
+}
+
+#recruit main {
+  background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-geometry.png);
+  background-repeat: repeat;
+}
+
+#recruit .recruit--catch_copy {
+  text-align: center;
+  padding: 100px 15px 40px 15px;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .recruit--catch_copy {
+    padding-top: 40px;
+  }
+}
+
+#recruit .recruit--catch_copy ::-moz-selection {
+  background: #391E88;
+}
+
+#recruit .recruit--catch_copy ::selection {
+  background: #391E88;
+}
+
+#recruit .recruit--catch_copy p {
+  font-family: "Montserrat";
+}
+
+#recruit .recruit--catch_copy p:nth-of-type(1) {
+  font-size: 72px;
+  font-weight: bold;
+  color: #391E88;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .recruit--catch_copy p:nth-of-type(1) {
+    font-size: 48px;
+  }
+}
+
+#recruit .recruit--catch_copy p:nth-of-type(2) {
+  font-size: 32px;
+  color: #391E88;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .recruit--catch_copy p:nth-of-type(2) {
+    font-size: 18px;
+  }
+}
+
+#recruit .recruit--catch_copy p:nth-of-type(3) {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#recruit .recruit--kv {
+  max-width: 2000px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+#recruit .recruit--kv img {
+  width: 100%;
+}
+
+#recruit .wanted--outer {
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .wanted--outer .title h2 {
+    font-size: 24px;
+  }
+}
+
+#recruit .wanted {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+  border: solid 1px #b067cf;
+  border-radius: 6px;
+  padding: 60px 95px;
+  text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .wanted {
+    padding: 30px 20px;
+    margin-bottom: 80px;
+  }
+}
+
+#recruit .wanted > p {
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .wanted > p {
+    font-size: 16px;
+  }
+}
+
+#recruit .wanted > p:nth-of-type(2) {
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+#recruit .wanted ul {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#recruit .wanted ul li {
+  border-bottom: solid 1px #ddd;
+  padding: 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .wanted ul li {
+    font-size: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1.8;
+  }
+}
+
+#recruit .wanted ul li span {
+  font-weight: bold;
+  display: inline-block;
+  width: 20%;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .wanted ul li span {
+    padding-bottom: 5px;
+  }
+}
+
+#recruit .movie {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+
+@media screen and (max-width: 770px) {
+  #recruit .movie {
+    padding-bottom: 80px;
+  }
+}
+
+#recruit .movie .movie--youtube {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+#recruit .movie .movie--youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -37,6 +37,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 * ::-moz-selection {
   background: #21054d;
   color: #fff;
@@ -1835,5 +1836,80 @@ footer ul a:hover {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* ===============================================
+# フォント
+=============================================== */
+/* ===============================================
+# フォントサイズ
+=============================================== */
+/* ===============================================
+# 色
+=============================================== */
+#contact {
+  font-family: "Montserrat";
+  line-height: 1.8;
+}
+
+#contact .contact--inner {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
+#contact .contact--inner span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #391E88;
+  padding-left: 10px;
+}
+
+#contact .contact--inner > p {
+  padding-bottom: 40px;
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+#contact .contact--inner > div {
+  background-color: #f7f7f7;
+  padding: 90px;
+  text-align: left;
+}
+
+#contact .contact--inner .type p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#contact .contact--inner .name input, #contact .contact--inner .company input, #contact .contact--inner .mail input, #contact .contact--inner .tel input {
+  display: block;
+  width: 50%;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 1px #aaa;
+  background-color: #fff;
+}
+
+#contact .contact--inner .name label, #contact .contact--inner .company label, #contact .contact--inner .mail label, #contact .contact--inner .tel label {
+  margin-bottom: 30px;
+}
+
+#contact .contact--inner .tel input {
+  width: 35%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#contact .contact--inner textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 1px #aaa;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

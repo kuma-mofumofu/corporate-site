@@ -1,45 +1,46 @@
 @import "../global/variables";
 
-#contact{
+#contact {
   font-family: "Montserrat";
   line-height: 1.8;
 
-  .contact--inner{
+  .contact--inner {
     max-width: 780px;
     margin: 0 auto;
     padding: 70px 0;
     text-align: center;
 
-    span{
+    span {
       font-size: 12px;
       font-weight: bold;
       color: $color-main;
       padding-left: 10px;
     }
 
-    >p{
+    > p {
       padding-bottom: 40px;
       font-family: "Montserrat";
       font-size: 15px;
     }
 
-    >div{
+    > div {
       background-color: $color-form;
       padding: 90px;
       text-align: left;
     }
 
-    .type{
-
-      p{
+    .type {
+      p {
         font-weight: bold;
         font-size: 15px;
       }
     }
 
-    .name,.company,.mail,.tel{
-
-      input{
+    .name,
+    .company,
+    .mail,
+    .tel {
+      input {
         display: block;
         width: 50%;
         padding: 8px;
@@ -48,13 +49,13 @@
         background-color: $color-white;
       }
 
-      label{
+      label {
         margin-bottom: 30px;
       }
     }
 
-    .tel{
-      input{
+    .tel {
+      input {
         width: 35%;
         padding: 8px;
         border-radius: 5px;
@@ -62,7 +63,7 @@
       }
     }
 
-    textarea{
+    textarea {
       display: block;
       width: 100%;
       height: 200px;

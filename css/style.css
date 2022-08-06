@@ -1883,7 +1883,10 @@ footer ul a:hover {
   font-size: 15px;
 }
 
-#contact .contact--inner .name input, #contact .contact--inner .company input, #contact .contact--inner .mail input, #contact .contact--inner .tel input {
+#contact .contact--inner .name input,
+#contact .contact--inner .company input,
+#contact .contact--inner .mail input,
+#contact .contact--inner .tel input {
   display: block;
   width: 50%;
   padding: 8px;
@@ -1892,7 +1895,10 @@ footer ul a:hover {
   background-color: #fff;
 }
 
-#contact .contact--inner .name label, #contact .contact--inner .company label, #contact .contact--inner .mail label, #contact .contact--inner .tel label {
+#contact .contact--inner .name label,
+#contact .contact--inner .company label,
+#contact .contact--inner .mail label,
+#contact .contact--inner .tel label {
   margin-bottom: 30px;
 }
 

@@ -103,3 +103,10 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+/*右端に出る下矢印を消す*/

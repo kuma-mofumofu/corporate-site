@@ -365,6 +365,14 @@ body a {
   right: -50px;
 }
 
+/* ==========================================================
+# フォームのボタン(buttonタグの為？か、before,afterがずれるので修正)
+============================================================= */
+.inside--btn .btn-morer::before, .inside--btn .btn-morer::after {
+  top: -1px;
+  left: -1px;
+}
+
 /* ===============================================
 # フォント
 =============================================== */
@@ -688,11 +696,11 @@ footer ul a:hover {
   display: block;
   width: 50px;
   height: 50px;
-  padding: 16px 17px;
+  padding: 0 17px;
 }
 
 .scroll_top a span {
-  font-weight: bold;
+  font-size: 30px;
 }
 
 /* ===============================================
@@ -1852,64 +1860,181 @@ footer ul a:hover {
   line-height: 1.8;
 }
 
-#contact .contact--inner {
+#contact ::-moz-selection {
+  background-color: #391E88;
+  color: #fff;
+}
+
+#contact ::selection {
+  background-color: #391E88;
+  color: #fff;
+}
+
+#contact .inside {
   max-width: 780px;
   margin: 0 auto;
   padding: 70px 0;
   text-align: center;
 }
 
-#contact .contact--inner span {
+@media screen and (max-width: 770px) {
+  #contact .inside {
+    padding: 40px 0;
+  }
+}
+
+#contact .inside > p {
+  padding-bottom: 40px;
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+@media screen and (max-width: 770px) {
+  #contact .inside > p {
+    font-size: 14px;
+  }
+}
+
+#contact .inside > p br {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  #contact .inside > p br {
+    display: block;
+  }
+}
+
+#contact .inside form {
+  background-color: #f7f7f7;
+  padding: 90px;
+  text-align: left;
+}
+
+@media screen and (max-width: 770px) {
+  #contact .inside form {
+    padding: 30px;
+  }
+}
+
+#contact .inside .inside--block {
+  margin-bottom: 30px;
+}
+
+#contact .inside .type span, #contact .inside .name span, #contact .inside .company span, #contact .inside .mail span, #contact .inside .question span {
   font-size: 12px;
   font-weight: bold;
   color: #391E88;
   padding-left: 10px;
 }
 
-#contact .contact--inner > p {
-  padding-bottom: 40px;
-  font-family: "Montserrat";
-  font-size: 15px;
+#contact .inside .type {
+  margin-bottom: 30px;
 }
 
-#contact .contact--inner > div {
-  background-color: #f7f7f7;
-  padding: 90px;
-  text-align: left;
-}
-
-#contact .contact--inner .type p {
+#contact .inside .type p {
   font-weight: bold;
   font-size: 15px;
 }
 
-#contact .contact--inner .name input,
-#contact .contact--inner .company input,
-#contact .contact--inner .mail input,
-#contact .contact--inner .tel input {
+@media screen and (max-width: 770px) {
+  #contact .inside .type p {
+    font-size: 14px;
+  }
+}
+
+#contact .inside .type > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 770px) {
+  #contact .inside .type > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#contact .inside .type > div label {
+  margin-right: 35px;
+  font-size: 15px;
+}
+
+#contact .inside .name input,
+#contact .inside .company input,
+#contact .inside .mail input,
+#contact .inside .tel input {
   display: block;
   width: 50%;
+  height: 45px;
   padding: 8px;
   border-radius: 5px;
   border: solid 1px #aaa;
   background-color: #fff;
 }
 
-#contact .contact--inner .name label,
-#contact .contact--inner .company label,
-#contact .contact--inner .mail label,
-#contact .contact--inner .tel label {
+@media screen and (max-width: 770px) {
+  #contact .inside .name input,
+  #contact .inside .company input,
+  #contact .inside .mail input,
+  #contact .inside .tel input {
+    width: 100%;
+  }
+}
+
+#contact .inside .name label,
+#contact .inside .company label,
+#contact .inside .mail label,
+#contact .inside .tel label {
+  font-size: 15px;
+  font-weight: bold;
   margin-bottom: 30px;
 }
 
-#contact .contact--inner .tel input {
+@media screen and (max-width: 770px) {
+  #contact .inside .name label,
+  #contact .inside .company label,
+  #contact .inside .mail label,
+  #contact .inside .tel label {
+    font-size: 14px;
+  }
+}
+
+#contact .inside .tel span {
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+#contact .inside .tel input {
   width: 35%;
   padding: 8px;
   border-radius: 5px;
   background-color: #fff;
 }
 
-#contact .contact--inner textarea {
+@media screen and (max-width: 770px) {
+  #contact .inside .tel input {
+    width: 100%;
+  }
+}
+
+#contact .inside .content label {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 770px) {
+  #contact .inside .content label {
+    font-size: 14px;
+  }
+}
+
+#contact .inside .content textarea {
   display: block;
   width: 100%;
   height: 200px;
@@ -1917,5 +2042,24 @@ footer ul a:hover {
   border-radius: 5px;
   border: solid 1px #aaa;
   background-color: #fff;
+}
+
+#contact .inside select {
+  width: 50%;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  border: solid 1px #aaa;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+  #contact .inside select {
+    width: 100%;
+  }
+}
+
+#contact .inside .inside--btn {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

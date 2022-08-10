@@ -54,72 +54,94 @@
       </div>
 
       <section>
-        <div class="contact--inner">
-          <p>Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+        <div class="inside">
+          <p>Webサイトの制作のご依頼やお見積りなど、<br>お気軽にご相談ください。</p>
 
-          <div>
+          <form>
 
-            <div class="type">
+            <div class="inside--block type">
               <p>お問い合わせ種別<span>*必須</span></p>
 
-              <label><!-- labelタグで囲むと文字をクリックした時でもチェックが入る -->
-                <input type="radio" >
-                お仕事のご依頼・ご相談<!-- labelタグの中にはpタグは使えない -->
-              </label>
+              <div>
+                <label><!-- labelタグで囲むと文字をクリックした時でもチェックが入る -->
+                  <input type="radio" name="type" ><!-- name=""を書いてないと全部のボタンにチェックが入る -->
+                  お仕事のご依頼・ご相談<!-- labelタグの中にはpタグは使えない -->
+                </label>
+  
+                <label>
+                  <input type="radio" name="type" >
+                  お見積りのご依頼
+                </label>
 
-              <label>
-                <input type="radio" >
-                お見積りのご依頼
-              </label>
+                <label>
+                  <input type="radio" name="type" >
+                  採用について
+                </label>
+  
+                <label>
+                  <input type="radio" name="type" >
+                  その他
+                </label>
+  
+              </div>
 
-              <label>
-                <input type="radio" >
-                採用について
-              </label>
+            </div><!-- /inside--block type -->
 
-              <label>
-                <input type="radio" >
-                その他
-              </label>
-
-            </div><!-- /type -->
-
-            <div class="name">
+            <div class="inside--block name">
               <label>
                 お名前<span>*必須</span>
                 <input type="text" name="name">
               </label>
             </div>
 
-            <div class="company">
+            <div class="inside--block company">
               <label>
                 会社名<span>*必須</span>
                 <input type="text" name="company">
               </label>
             </div>
 
-            <div class="mail">
+            <div class="inside--block mail">
               <label>
                 メールアドレス<span>*必須</span>
                 <input type="text" name="email">
               </label>
             </div>
 
-            <div class="tel">
+            <div class="inside--block tel">
               <label>
-                電話番号<span>(半角ハイフンなし)</span>
+                電話番号<span>(半角数字ハイフンなし)</span>
                 <input type="text" name="email">
               </label>
             </div>
 
-            <div class="content">
+            <div class="inside--block content">
               <label>
                 お問い合わせ内容
                 <textarea name="content" placeholder="お問い合わせ内容を具体的にご記入くださいませ。"></textarea>
               </label>
             </div>
 
-          </div>
+            <div class="inside--block question">
+              <p>PON DESIGNをどちらでお知りになりましたか？<span>*必須</span></p>
+
+              <select><!-- /コンボボックス（reset.cssで「▼」を消す） -->
+                <option value="none">選択してください</option>
+                <option value="search">Google/Yahoo検索</option>
+                <option value="sns">SNS</option>
+                <option value="blog">ブログ</option>
+                <option value="friend">友人や知人</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="inside--btn">
+              <button class="btn btn-morer" type="submit"><!-- /「type="submit」formの情報をサーバーに送る為に必要 -->
+                <span>送信する</span>
+              </button>
+            </div>
+  
+          </form>
 
         </div><!-- /contact--inner -->
       </section>

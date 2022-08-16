@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {//先に読み込むため必要
 
-  /*------以下の書き方だと１回しか経過時間を取れない（プログラムが１回しか走らないから）------*/
+
+  /* ============================================================================================
+  # 以下の書き方だと１回しか経過時間を取れない（プログラムが１回しか走らないから）
+  =============================================================================================== */
 
   // const startTime = Date.now()*1000;               //現在の時間を取得(Date.now()で、1/1000秒を取得するので1000倍にして小数点以下切り捨て)
   // const time = (Date.now()*1000) - startTime;      // 経過時間を秒で取得
 
-  /*-----------------------------------------------------------------------------*/
 
-  /*------うまくclassが付かない-----------------------------------------------------*/
+
+  /* ============================================================================================
+  # うまくclassが付かない
+  =============================================================================================== */
 
   // const sliderTime = document.querySelector('#slider');
 
@@ -28,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {//先に読み込むため�
   //   sliderTime.classList.toggle('is-active');         //2秒ごとに「is-active」を付けて消すを繰り返し
   // }
 
-  /*-----------------------------------------------------------------------------*/
+
 
   /* ========================================================================================
   # ２秒毎にclass「is-active」を付けて消す
@@ -52,43 +57,87 @@ document.addEventListener('DOMContentLoaded', () => {//先に読み込むため�
 
 
   /* =========================================================================================
-  # classを渡していく方法
+  # classを渡していく方法（完成）
   ============================================================================================ */
 
-  const images = document.querySelectorAll(".slider--image--inner img")
-  //①画像全部を指定で入れる
+  // const images = document.querySelectorAll(".slider--image--inner img")
+  // //①画像全部を指定で入れる
 
-  var i = 1
-  //⑥ループさせる為のカウンター
+  // var i = 1
+  // //⑥ループさせる為のカウンター
 
-  setInterval(()=>{
-  //②「setInterval」関数で、２秒毎に繰り返す
+  // setInterval(()=>{
+  // //②「setInterval」関数で、２秒毎に繰り返す
 
-    i++
-    //⑦１回動くごとに、１ずつ増えるようにする
+  //   i++
+  //   //⑦１回動くごとに、１ずつ増えるようにする
 
-    const image = document.querySelector(".slider--image--inner .is-active")
-    //③「image」に「is-active」を入れる
+  //   const image = document.querySelector(".slider--image--inner .is-active")
+  //   //③「image」に「is-active」を入れる
 
-    image.classList.remove("is-active")
-    //④「remove」で「is-active」を取り除く
+  //   image.classList.remove("is-active")
+  //   //④「remove」で「is-active」を取り除く
 
-    if(i > images.length){
-      //⑧「i」が「images(画像)」の数より大きい時
+  //   if(i > images.length){
+  //     //⑧「i」が「images(画像)」の数より大きい時
 
-      images[0].classList.add("is-active")
-      //⑧配列「images」の最初の画像に「is-active」を付ける
+  //     images[0].classList.add("is-active")
+  //     //⑧配列「images」の最初の画像に「is-active」を付ける
 
-      i = 1
-      //⑧「i」を１に戻す
+  //     i = 1
+  //     //⑧「i」を１に戻す
 
-    }else{
-      //⑨上記の条件が当てはまらない時に、class移動を実行
+  //   }else{
+  //     //⑨上記の条件が当てはまらない時に、class移動を実行
 
-      image.nextElementSibling.classList.add("is-active")
-      //⑤「nextElementSibling」で兄弟要素の指定、「classList.add」classを付ける(class移動)
+  //     image.nextElementSibling.classList.add("is-active")
+  //     //⑤「nextElementSibling」で兄弟要素の指定、「classList.add」classを付ける(class移動)
+  //   }
+  // },7000)//1000 = １秒
+
+
+
+  /* =========================================================================================
+  # 動きのセットを作ってから動かす
+  ============================================================================================ */
+
+  const images = document.querySelectorAll(".slider--image--inner img");
+
+  const bots = document.querySelectorAll(".slider--dot span");
+
+
+  let i = 0;
+
+  //「move」
+  const move = setInterval(() => {
+
+    i++;
+
+    if(i >= images.length){
+      i = 0;
     }
-  },7000)//1000 = １秒
 
+    slider(i);
+
+    // if(i >= images.length){
+    //   clearInterval(move);
+    // }else{
+    //   i++;
+    // }
+
+
+  },2000);
+
+  const slider = (j)=>{
+
+    const image = document.querySelector(".slider--image--inner .is-active");
+    const bot = document.querySelector(".slider--dot .is-active");
+
+    image.classList.remove("is-active");
+    bot.classList.remove("is-active");
+
+    images[j].classList.add("is-active");
+    bots[j].classList.add("is-active");
+  }
 
 });

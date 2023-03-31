@@ -1,122 +1,117 @@
 @import "../global/variables";
 
-#top{
-
-  .kv{
+#top {
+  .kv {
     height: 100vh;
-    background-image: url(../images/top.png);
+    background-image: url("../images/top.png");
     background-position: center center;
     background-size: cover;
     text-align: center;
     position: relative;
     color: $color-white;
 
-    .kv--title{
+    .kv--title {
       width: 100%;
       position: absolute;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
 
-      @media screen and (max-width:770px){
+      @media screen and (max-width: 770px) {
         width: 88%;
         text-align: left;
       }
 
-      > p{
-
-        &:first-of-type{
+      > p {
+        &:first-of-type {
           font-family: "Montserrat";
           font-size: 72px;
           font-weight: bold;
           padding-bottom: 30px;
 
-          @media screen and (max-width:770px){
+          @media screen and (max-width: 770px) {
             font-size: 40px;
           }
         }
 
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
           font-size: 25px;
           padding-bottom: 50px;
 
-          @media screen and (max-width:770px){
+          @media screen and (max-width: 770px) {
             font-size: 16px;
             line-height: 1.8rem;
           }
 
-          br{
+          br {
             display: none;
 
-            @media screen and (max-width:770px){
+            @media screen and (max-width: 770px) {
               display: block;
             }
           }
         }
       }
-  
     }
 
-    br{
+    br {
       display: none;
     }
   }
-
 
   /* ===============================================
   # NEWS
   =============================================== */
 
-  .news{
+  .news {
     display: flex;
     margin: 0 auto;
     max-width: 917px;
     font-family: "Montserrat";
 
-    @media screen and (max-width:770px){
+    @media screen and (max-width: 770px) {
       flex-direction: column;
       align-items: center;
       padding-top: 40px;
     }
   }
 
-  .title-news{
+  .title-news {
     padding-right: 50px;
 
-    @media screen and (max-width:770px){
-      text-align:center;
+    @media screen and (max-width: 770px) {
+      text-align: center;
       padding-right: 0;
       padding-bottom: 30px;
     }
   }
 
-  .news-list{
-
-    li{
+  .news-list {
+    li {
       display: flex;
       align-items: center;
       margin-bottom: 15px;
 
-      @media screen and (max-width:770px){
+      @media screen and (max-width: 770px) {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 30px;
       }
 
-      time{
+      time {
         font-size: 14px;
         padding-right: 20px;
       }
 
-      .news-list-block{
+      .news-list-block {
         display: flex;
         align-items: center;
 
-        @media screen and (max-width:770px){
+        @media screen and (max-width: 770px) {
           margin-bottom: 5px;
         }
 
-        > div{
+        > div {
           padding: 5px 15px;
           text-align: center;
           font-size: 12px;
@@ -124,24 +119,24 @@
           width: 82px;
           height: 22px;
           background: $color-gray;
-          border-radius:10px;
+          border-radius: 10px;
 
-          @media screen and (max-width:770px){
-            font-size:11px;
+          @media screen and (max-width: 770px) {
+            font-size: 11px;
           }
         }
       }
 
-      a{
+      a {
         padding-left: 20px;
 
-        @media screen and (max-width:770px){
+        @media screen and (max-width: 770px) {
           padding: 0;
         }
 
-        p{
-          letter-spacing:.1rem;//文字間隔
-          @media screen and (max-width:770px){
+        p {
+          letter-spacing: 0.1rem; //文字間隔
+          @media screen and (max-width: 770px) {
             font-size: 14px;
           }
         }
@@ -153,48 +148,48 @@
   # SERVICE
   =============================================== */
 
-  .service{
+  .service {
     max-width: 1100px;
     margin: 0 auto;
     text-align: center;
   }
 
-  .service--list{
+  .service--list {
     display: flex;
     margin-bottom: 30px;
 
-    @media screen and (max-width:770px){
+    @media screen and (max-width: 770px) {
       flex-direction: column;
     }
   }
 
-  .service--list--block{
+  .service--list--block {
     margin-right: 30px;
     text-align: center;
-    @media screen and (max-width:770px){
+    @media screen and (max-width: 770px) {
       margin-right: 0;
     }
 
-    img{
+    img {
       width: 100%;
       margin-bottom: 15px;
     }
 
-    p{
+    p {
       font-family: "Montserrat";
 
-      &:nth-of-type(1){
+      &:nth-of-type(1) {
         font-size: 18px;
         font-weight: bold;
         padding-bottom: 15px;
       }
-      &:nth-of-type(2){
+      &:nth-of-type(2) {
         font-size: 15px;
         text-align: left;
         text-align: justify;
         line-height: 1.8;
 
-        @media screen and (max-width:770px){
+        @media screen and (max-width: 770px) {
           padding-bottom: 40px;
         }
       }
@@ -205,10 +200,10 @@
   # WORKS
   =============================================== */
 
-  .works--outer{
+  .works--outer {
     padding: 60px 0 40px 0;
   }
-  .works{
+  .works {
     max-width: 1300px;
     display: flex;
     align-items: center;
@@ -216,32 +211,32 @@
     padding: 60px 20px;
     margin: 0 auto;
 
-    @media screen and (max-width:770px){
+    @media screen and (max-width: 770px) {
       flex-direction: column;
     }
 
-    &::after{
+    &::after {
       content: "";
       width: 60%;
       height: 100%;
       background-color: $color-gray_bg;
       position: absolute;
-      top:50%;
+      top: 50%;
       right: 0;
       transform: translateY(-50%);
       z-index: -1;
 
-      @media screen and (max-width:770px){
+      @media screen and (max-width: 770px) {
         width: 100%;
       }
     }
   }
 
-  .works--text{
+  .works--text {
     flex-grow: 1;
     text-align: center;
 
-    > p{
+    > p {
       font-family: "Montserrat";
       font-size: 15px;
       line-height: 1.8rem;
@@ -253,59 +248,63 @@
   # COMPANY
   =============================================== */
 
-  .company{
+  .company {
     padding: 100px 0;
     margin: 0 auto;
     max-width: 1300px;
     text-align: center;
-    background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-circle.png),url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-face.png);
+    background-image: url("../images/bg-circle.png"),
+      url("../images/bg-face.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media screen and (max-width:770px){
+    @media screen and (max-width: 770px) {
       padding: 60px 0;
-      background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/sp_bg-circle.png);
+      background-image: url("../images/sp_bg-circle.png");
       background-position: center center;
       background-size: 375px;
     }
 
-    > p{
+    > p {
       font-family: "Montserrat";
 
-      &:nth-of-type(1){
+      &:nth-of-type(1) {
         font-size: 40px;
         font-weight: bold;
         margin-bottom: 40px;
         display: inline-block;
 
-        @media screen and (max-width:770px){
+        @media screen and (max-width: 770px) {
           font-size: 32px;
           line-height: 1.5;
         }
 
-        span{
-          background: linear-gradient(transparent 70%,#f5f534 0%);//「transparent」は透明(黒の透明)、最後「0%」は境目くっきり
+        span {
+          background: linear-gradient(
+            transparent 70%,
+            #f5f534 0%
+          ); //「transparent」は透明(黒の透明)、最後「0%」は境目くっきり
         }
 
-        br{
+        br {
           display: none;
 
-          @media screen and (max-width:770px){
+          @media screen and (max-width: 770px) {
             display: block;
           }
         }
       }
 
-      &:nth-of-type(2){
+      &:nth-of-type(2) {
         font-size: 15px;
         line-height: 1.8;
         margin-bottom: 30px;
 
-        .br_sp{
+        .br_sp {
           display: none;
 
-          @media screen and (max-width:770px){
+          @media screen and (max-width: 770px) {
             display: block;
           }
         }
@@ -317,40 +316,38 @@
   # RECRUIT
   =============================================== */
 
-  .recruit{
+  .recruit {
     max-width: 1100px;
     display: flex;
     margin: 0 auto;
     padding-bottom: 40px;
 
-    @media screen and (max-width:770px){
+    @media screen and (max-width: 770px) {
       flex-direction: column-reverse;
     }
 
-    .recruit--text{
+    .recruit--text {
       background-color: $color-gray_bg;
       text-align: center;
       padding: 70px 40px;
       flex-grow: 1;
 
-      >p {
+      > p {
         margin-bottom: 30px;
         font-size: 15px;
         font-family: "Montserrat";
       }
     }
 
-    .recruit--image{
+    .recruit--image {
       width: 60%;
-      background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/image.png);
+      background-image: url(../images/image.png);
       background-position: center center;
       background-size: cover;
-      @media screen and (max-width:770px){
+      @media screen and (max-width: 770px) {
         width: 100%;
         height: 200px;
       }
     }
   }
-
-
 }

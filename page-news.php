@@ -1,0 +1,227 @@
+
+
+  <body id="news">
+
+    <header id="header">
+      <div class="header--inner">
+
+        <h1 class="logo">
+          <a href="inedx.html"><img src="images/logo.png" alt=""></a>
+        </h1>
+
+        <nav>
+          <ul>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="service.html">SERVICE</a></li>
+            <li><a href="works.html">WORKS</a></li>
+            <li><a href="company.html">COMPANY</a></li>
+            <li><a href="recruit.html">RECRUIT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu">
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      </div><!-- /header--inner -->
+    </header>
+
+    <main>
+
+      <section>
+        <div class="page_title">
+          <h2>NEWS</h2>
+          <p>お知らせ</p>
+        </div>
+      </section>
+
+      <div class="pankuzu"><!-- position:stickyを指定する時に親要素の範囲内になるから、親がmainになるようにしている -->
+        <p><a href="inedx.html">HOME</a><span>＞</span>NEWS</p>
+      </div>
+
+
+      <section>
+        <div class="news--list">
+            <ul>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-02-01">2030.02.01</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-25">2030.01.25</time>
+                  <div>制作実績</div>
+                </div>
+                <a href="#">Smoothiesta様のWebサイトを制作いたしました</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.20</time>
+                  <div>採用</div>
+                </div>
+                <a href="#">Webデザイナーを1名募集中です!</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.15</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">（２行のテキストの場合）テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+              <li>
+                <div class="news-list-block">
+                  <time datetime="2030-01-20">2030.01.14</time>
+                  <div>お知らせ</div>
+                </div>
+                <a href="#">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</a>
+              </li>
+
+            </ul>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="contact">
+
+          <div class="title title-contact">
+            <h2>CONTACT</h2>
+            <p>お問い合わせ</p>
+          </div>
+
+          <p>Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+
+          <a href="contact.html" class="btn btn-morer">
+            <span>MORE</span>
+          </a>
+
+        </div>
+      </section>
+
+    </main>
+

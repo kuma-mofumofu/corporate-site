@@ -840,7 +840,7 @@ footer ul a:hover {
 
 #top .kv {
   height: 100vh;
-  background-image: url(../images/top.png);
+  background-image: url("../images/top.png");
   background-position: center center;
   background-size: cover;
   text-align: center;
@@ -1008,7 +1008,7 @@ footer ul a:hover {
 }
 
 #top .news-list li a p {
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 @media screen and (max-width: 770px) {
@@ -1142,7 +1142,7 @@ footer ul a:hover {
   margin: 0 auto;
   max-width: 1300px;
   text-align: center;
-  background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-circle.png), url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/bg-face.png);
+  background-image: url("../images/bg-circle.png"), url("../images/bg-face.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1151,7 +1151,7 @@ footer ul a:hover {
 @media screen and (max-width: 770px) {
   #top .company {
     padding: 60px 0;
-    background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/sp_bg-circle.png);
+    background-image: url("../images/sp_bg-circle.png");
     background-position: center center;
     background-size: 375px;
   }
@@ -1241,7 +1241,7 @@ footer ul a:hover {
 
 #top .recruit .recruit--image {
   width: 60%;
-  background-image: url(/Users/akedotaichi/Desktop/2022.07.15課題/kadai/images/image.png);
+  background-image: url(../images/image.png);
   background-position: center center;
   background-size: cover;
 }

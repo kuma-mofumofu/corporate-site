@@ -1,24 +1,23 @@
-$(function () {
-
+jQuery(function ($) {
   /* ===============================================
   # スクロールした時の、headerイベント
   =============================================== */
   
-  $(window).scroll(function(){
+  jQuery(window).scroll(function(){
 
-    if($(window).scrollTop()>20){
-      //「scrollTop()」で、スクロール位置取得「$(window)」で、ブラウザ全体の位置。
-      $('#header').addClass('is-active');
+    if(jQuery(window).scrollTop()>20){
+      //「scrollTop()」で、スクロール位置取得「jQuery(window)」で、ブラウザ全体の位置。
+      jQuery('#header').addClass('is-active');
       //20以上スクロールしている時の処理。「#headerに、is-activeを付ける」
     } else {
-      $('#header').removeClass('is-active');
+      jQuery('#header').removeClass('is-active');
       //20以下のスクロールしている時の処理。「#headerに、is-activeが付いてたら外す」
     }
 
-    if($(window).scrollTop()>100){
-      $('.scroll_top').addClass('is-active');
+    if(jQuery(window).scrollTop()>100){
+      jQuery('.scroll_top').addClass('is-active');
     }else{
-      $('.scroll_top').removeClass('is-active');
+      jQuery('.scroll_top').removeClass('is-active');
     }
   });
 
@@ -27,11 +26,11 @@ $(function () {
   # ハンバーガーメニュー
   =============================================== */
 
-  $('.menu').on('click',function () {
+  jQuery('.menu').on('click',function () {
   // .menuをクリックした時
 
-    $(this).toggleClass('is-open')
-    $('#header').toggleClass('is-open')
+    jQuery(this).toggleClass('is-open')
+    jQuery('#header').toggleClass('is-open')
     //.is-open追加
 
         // //指定するクラスに〇〇があるか調べて、true・farceで返す
@@ -41,7 +40,7 @@ $(function () {
         //   console.log('bbb') //ない時(farce)の処理
         // }
     
-  })
+  });
 
 
 });
